@@ -51,7 +51,6 @@ mlnotebook() {
 		jupyter notebook \
 			--no-browser \
 			--notebook-dir=/tmp/working \
-			--allow-root \
 			--ip 0.0.0.0 \
 			--NotebookApp.token='' \
 			--NotebookApp.password=''
@@ -92,7 +91,6 @@ gmlnotebook() {
 		jupyter notebook \
 			--no-browser \
 			--notebook-dir=/tmp/working \
-			--allow-root \
 			--ip 0.0.0.0 \
 			--NotebookApp.token='' \
 			--NotebookApp.password=''

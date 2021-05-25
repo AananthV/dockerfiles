@@ -9,6 +9,10 @@ RUN apt-get install -y --no-install-recommends python3-pip
 RUN apt-get install -y --no-install-recommends python3-wheel 
 RUN apt-get install -y --no-install-recommends python3-setuptools
 
+# Create a new user and use as the user from now
+RUN useradd oh_no_my_root
+USER oh_no_my_root
+
 # Install relavant python packages
 RUN pip3 install numpy 
 RUN pip3 install matplotlib 
