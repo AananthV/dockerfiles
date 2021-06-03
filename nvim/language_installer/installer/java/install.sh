@@ -1,1 +1,1 @@
-nvim --headless +"CocInstall coc-tsserver -sync" +qall
+nvim --headless +"CocInstall coc-java -sync" +qall

@@ -44,7 +44,7 @@ endfor
 
 nnoremap <leader>h :bp<CR>
 nnoremap <leader>l :bn<CR>
-nnoremap <leader>d :b#<CR>:bd#<CR>
+nnoremap <leader>d :b#<CR>:bw#<CR>
 
 source $HOME/.config/nvim/config/plugins.vim
 source $HOME/.config/nvim/config/coc.vim
