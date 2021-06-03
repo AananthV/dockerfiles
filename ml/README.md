@@ -95,5 +95,4 @@ gmlnotebook() {
 			--NotebookApp.token='' \
 			--NotebookApp.password=''
 }
-
 ```
