@@ -6,7 +6,7 @@ const { execSync } = require('child_process');
 
 const languages = process.argv.slice(2);
 
-const coc_config = {}
+let coc_config = {}
 
 // Install language
 for (let language of languages) {
@@ -15,7 +15,7 @@ for (let language of languages) {
             execSync(installer);
         }
         
-        const language_server_config = path.join(__dirname, `installer/${language}/config.json`);
+        const language_server_config = path.join(__dirname, `installer/${language}/coc.json`);
         if (fs.existsSync(language_server_config)){
                 const language_config = require(language_server_config);
                 coc_config = {...coc_config, ...language_config};
